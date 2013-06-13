@@ -38,7 +38,7 @@ location ~ \.php$ {
 	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
 	fastcgi_intercept_errors on;
 	#fastcgi_pass 127.0.0.1:9000;
-	unix:/var/run/php5-fpm.sock;
+	fastcgi_pass unix:/var/run/php5-fpm.sock;
 }
 
 # Fighting with ImageCache? This little gem is amazing.

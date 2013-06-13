@@ -17,6 +17,6 @@ server {
   auth_basic_user_file htpasswd;
   }
   
-  include /etc/nginx/templates/drupal-nginx/drupal7;
+  include /etc/nginx/templates/drupal-nginx/drupal7.inc;
 }
 ```
