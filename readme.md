@@ -8,9 +8,9 @@ Adapted from http://wiki.nginx.org/Drupal
 Usage inside /etc/nginx/sites-enabled/yoursite.com:
 ```
 server {
-  server_name yoursite.com
+  server_name yoursite.com;
   root /srv/www/yoursite.com;
-  index index.php
+  index index.php;
   
   location /mycustomlocation {
   auth_basic  "Authenticate";
